@@ -5,10 +5,12 @@ class ArrayList
     @storage = []
   end
 
+  # Adds _value_ at the end of the list
   def add(value)
   end
 
-  def delete(value)
+  # Deletes the _last_ value in the array
+  def delete
   end
 
   def display
@@ -36,6 +38,6 @@ arr.add(20)
 puts "Displaying Array List:"
 arr.display
 
-puts "Delete 10 and then display the array list:"
-arr.delete(10)
+puts "Delete last element and then display the array list:"
+arr.delete
 arr.display
