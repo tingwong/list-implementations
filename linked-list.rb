@@ -30,7 +30,7 @@ class LinkedList
        self
    end
 
-   # Limited functionality for this delete method: 
+   # Limited functionality for this delete method:
    def delete(val)
        current = @head
        if current.value == val
@@ -61,7 +61,7 @@ class LinkedList
            current = current.next_node
        end
        full_list += [current.value.to_s]
-       puts full_list.join("->")
+      return full_list.join("->")
    end
 
    def include?(key)
