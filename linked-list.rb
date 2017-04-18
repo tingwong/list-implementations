@@ -10,10 +10,6 @@ class Node
        @next_node = next_in_line
        puts "Initialized a Node with value:  " + value.to_s
    end
-
-   def to_s
-     return @value.to_s
-   end
 end
 
 class LinkedList
