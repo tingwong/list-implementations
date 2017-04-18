@@ -10,6 +10,10 @@ class Node
        @next_node = next_in_line
        puts "Initialized a Node with value:  " + value.to_s
    end
+
+   def to_s
+     return @value.to_s
+   end
 end
 
 class LinkedList
@@ -50,7 +54,7 @@ class LinkedList
        end
    end
 
-   def display
+   def to_s
        # Traverse through the list till you hit the "nil" at the end
        current = @head
        full_list = []
@@ -59,16 +63,40 @@ class LinkedList
            current = current.next_node
        end
        full_list += [current.value.to_s]
-       puts full_list.join("->")
+       return full_list.join("->") + "\n"
    end
 
    def include?(key)
+     current = @head
+     while current != nil
+         return true if current.value == key
+         current = current.next_node
+     end
+     return false
    end
 
    def size
+     return 0 if @head == nil
+     count = 0
+     current = @head
+     while current != nil
+         count += 1
+         current = current.next_node
+     end
+     return count
    end
 
    def max
+     return nil if @head == nil
+     current = @head
+     max = current.value
+     while current != nil
+         if current.value > max
+            max = current.value
+         end
+         current = current.next_node
+     end
+     return max
    end
 
 end
