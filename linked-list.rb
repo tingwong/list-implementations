@@ -18,6 +18,7 @@ class LinkedList
        @head = Node.new(val)
    end
 
+   # Limited functionality for this add method:
    def add(value)
        # Traverse to the end of the list
        # And insert a new node over there with the specified value
@@ -29,6 +30,7 @@ class LinkedList
        self
    end
 
+   # Limited functionality for this delete method: 
    def delete(val)
        current = @head
        if current.value == val
@@ -50,7 +52,7 @@ class LinkedList
        end
    end
 
-   def display
+   def to_s
        # Traverse through the list till you hit the "nil" at the end
        current = @head
        full_list = []
@@ -82,11 +84,11 @@ ll.add(20)
 
 # Display the Linked List
 puts "Displaying Linked List:"
-ll.display
+puts ll
 
 puts "Delete 10 and then display the linked list:"
 ll.delete(10)
-ll.display
+puts ll
 
 =begin
 Output:
