@@ -2,6 +2,7 @@
 
 class ArrayList
   def initialize
+    # creates a fixed size array to store values
     @storage = [0,0,0,0,0,0,0,0,0,0]
     @size = 0
   end
@@ -14,7 +15,9 @@ class ArrayList
 
   # Deletes the _last_ value in the array
   def delete
-#    @storage[@size-1] = 0
+    # we could have the following line, but it's actually
+    # unnecessary if we reduce our tracking of the size
+    # @storage[@size-1] = 0
     @size -= 1
   end
 
