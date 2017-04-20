@@ -51,6 +51,15 @@ class LinkedList
        end
    end
 
+   def include?(key)
+   end
+
+   def size
+   end
+
+   def max
+   end
+
    def to_s
        # Traverse through the list till you hit the "nil" at the end
        current = @head
@@ -62,14 +71,4 @@ class LinkedList
        full_list += [current.value.to_s]
       return full_list.join("->")
    end
-
-   def include?(key)
-   end
-
-   def size
-   end
-
-   def max
-   end
-
 end

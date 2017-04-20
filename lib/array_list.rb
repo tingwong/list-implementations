@@ -13,9 +13,6 @@ class ArrayList
   def delete
   end
 
-  def to_s
-  end
-
   def include?(key)
   end
 
@@ -25,4 +22,6 @@ class ArrayList
   def max
   end
 
+  def to_s
+  end
 end
