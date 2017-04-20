@@ -21,15 +21,6 @@ class ArrayList
     @size -= 1
   end
 
-  def to_s
-    toReturn = "["
-    @size.times do |i|
-      toReturn += @storage[i].to_s
-      toReturn += ", " unless i >= (@size - 1)
-    end
-    return toReturn + "]"
-  end
-
   def include?(key)
     @size.times do |i|
       return true if @storage[i] == key
@@ -50,5 +41,15 @@ class ArrayList
       end
     end
     return max
+  end
+
+  def to_s
+    toReturn = "["
+    @size.times do |i|
+      toReturn += @storage[i].to_s
+      # only adds a comma at the end, if not last element
+      toReturn += ", " unless i >= (@size - 1)
+    end
+    return toReturn + "]"
   end
 end
