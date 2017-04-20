@@ -8,7 +8,6 @@ class Node
    def initialize(val,next_in_line=nil)
        @value = val
        @next_node = next_in_line
-       puts "Initialized a Node with value:  " + value.to_s
    end
 end
 
