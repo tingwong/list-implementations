@@ -18,13 +18,13 @@ class ArrayList
     @size -= 1
   end
 
-  def display
+  def to_s
     toReturn = "["
     @size.times do |i|
       toReturn += @storage[i].to_s
       toReturn += ", " unless i >= (@size - 1)
     end
-    puts toReturn + "]"
+    return toReturn + "]"
   end
 
   def include?(key)
@@ -60,7 +60,7 @@ arr.add(20)
 
 # Display the Array List
 puts "Displaying Array List:"
-arr.display
+puts arr
 puts "Maximum value in list: #{arr.max}"
 
 puts "List size: #{arr.size}"
@@ -68,7 +68,7 @@ puts "List include 20? #{arr.include? 20}"
 
 puts "Delete last element and then display the array list:"
 arr.delete
-arr.display
+puts arr
 
 puts "List size: #{arr.size}"
 puts "List include 20? #{arr.include? 20}"

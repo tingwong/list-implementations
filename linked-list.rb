@@ -106,7 +106,7 @@ ll.add(20)
 
 # Display the Linked List
 puts "Displaying Linked List:"
-ll.display
+puts ll
 puts "Maximum value in list: #{ll.max}"
 
 puts "List size: #{ll.size}"
@@ -114,7 +114,7 @@ puts "List include 10? #{ll.include? 10}"
 
 puts "Delete 10 and then display the linked list:"
 ll.delete(10)
-ll.display
+puts ll
 
 puts "List size: #{ll.size}"
 puts "List include 10? #{ll.include? 10}"
