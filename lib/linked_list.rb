@@ -49,18 +49,6 @@ class LinkedList
        end
    end
 
-   def to_s
-       # Traverse through the list till you hit the "nil" at the end
-       current = @head
-       full_list = []
-       while current.next_node != nil
-           full_list += [current.value.to_s]
-           current = current.next_node
-       end
-       full_list += [current.value.to_s]
-       return full_list.join("->") + "\n"
-   end
-
    def include?(key)
      current = @head
      while current != nil
@@ -94,4 +82,15 @@ class LinkedList
      return max
    end
 
+   def to_s
+       # Traverse through the list till you hit the "nil" at the end
+       current = @head
+       full_list = []
+       while current.next_node != nil
+           full_list += [current.value.to_s]
+           current = current.next_node
+       end
+       full_list += [current.value.to_s]
+       return full_list.join("->") + "\n"
+   end
 end
