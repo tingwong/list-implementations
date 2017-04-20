@@ -21,7 +21,8 @@ class ArrayList
   def display
     toReturn = "["
     @size.times do |i|
-      toReturn += @storage[i].to_s + ", "
+      toReturn += @storage[i].to_s
+      toReturn += ", " unless i >= (@size - 1)
     end
     puts toReturn + "]"
   end
