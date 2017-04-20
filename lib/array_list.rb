@@ -26,26 +26,3 @@ class ArrayList
   end
 
 end
-
-# Initializing an Array List
-arr = ArrayList.new
-
-# Adding Elements to Array List
-arr.add(5)
-arr.add(10)
-arr.add(20)
-
-# Display the Array List
-puts "Displaying Array List:"
-puts arr
-puts "Maximum value in list: #{arr.max}"
-
-puts "List size: #{arr.size}"
-puts "List include 20? #{arr.include? 20}"
-
-puts "Delete last element and then display the array list:"
-arr.delete
-puts arr
-
-puts "List size: #{arr.size}"
-puts "List include 20? #{arr.include? 20}"
