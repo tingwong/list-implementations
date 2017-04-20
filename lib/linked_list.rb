@@ -96,36 +96,3 @@ class LinkedList
    end
 
 end
-
-# Initializing a Linked List with a node containing value (5)
-ll = LinkedList.new(5)
-
-# Adding Elements to Linked List
-ll.add(10)
-ll.add(20)
-
-# Display the Linked List
-puts "Displaying Linked List:"
-puts ll
-puts "Maximum value in list: #{ll.max}"
-
-puts "List size: #{ll.size}"
-puts "List include 10? #{ll.include? 10}"
-
-puts "Delete 10 and then display the linked list:"
-ll.delete(10)
-puts ll
-
-puts "List size: #{ll.size}"
-puts "List include 10? #{ll.include? 10}"
-
-=begin
-Output:
-Initialized a Node with value:  5
-Initialized a Node with value:  10
-Initialized a Node with value:  20
-Displaying Linked List:
-5->10->20
-Delete 10 and then display the linked list:
-5->20
-=end
